@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height:100%;
+    width: 100%;
+    background: linear-gradient(rgb(13, 13, 13),rgb(36, 36, 36));
+    display: flex;
+    
+}
+section{
+    height:95%;
+    width: 400px;
+    background: linear-gradient(rgb(13, 13, 13),rgb(36, 36, 36));
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+.reel-main{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    scroll-snap-align: start;
+}
+.reel video{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.bottom{
+    position: absolute;
+    color: bisque;
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to bottom,transparent,black);
+    border-radius: 20px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    padding-top: 10px;
+    
+}
+.user img{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user button{
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+.bottom h4{
+    font-weight: 500;
+    font-size: 13px;
+}
+.right{
+    position: absolute;
+    right: 0px;
+    bottom: 80px;
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    gap : 10px;
+    text-align: center;
+}
+.right p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.right div{
+    font-size: 23px;
+    font-weight: 200;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+
+}
+.red{
+    color: red;
+}
+.right i , p {
+    pointer-events: none;
+}
+section::-webkit-scrollbar{
+    display: none;
+}
+.mute{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: larger;
+    background: transparent;
+    position:absolute;
+    color: white;
+    top:15px;
+    right:15px;
+    z-index: 10;
+}
+.mute i{
+    pointer-events: none;
+}
